@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0D511549214C3E9F00CD5398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D511548214C3E9F00CD5398 /* AppDelegate.swift */; };
-		0D51154B214C3E9F00CD5398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D51154A214C3E9F00CD5398 /* ViewController.swift */; };
 		0D51154D214C3EA000CD5398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D51154C214C3EA000CD5398 /* Assets.xcassets */; };
 		0D511550214C3EA000CD5398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D51154E214C3EA000CD5398 /* Main.storyboard */; };
+		0D511559214C44D900CD5398 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D511558214C44D900CD5398 /* QuotesViewController.swift */; };
+		0D51155D214C48F200CD5398 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D51155C214C48F200CD5398 /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D511545214C3E9F00CD5398 /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D511548214C3E9F00CD5398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D51154A214C3E9F00CD5398 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D51154C214C3EA000CD5398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D51154F214C3EA000CD5398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D511551214C3EA000CD5398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D511552214C3EA000CD5398 /* Quotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quotes.entitlements; sourceTree = "<group>"; };
+		0D511558214C44D900CD5398 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		0D51155C214C48F200CD5398 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,13 +56,38 @@
 			isa = PBXGroup;
 			children = (
 				0D511548214C3E9F00CD5398 /* AppDelegate.swift */,
-				0D51154A214C3E9F00CD5398 /* ViewController.swift */,
+				0D51155E214C48F800CD5398 /* Model */,
+				0D51155A214C48D100CD5398 /* View */,
+				0D51155B214C48E000CD5398 /* Controller */,
 				0D51154C214C3EA000CD5398 /* Assets.xcassets */,
-				0D51154E214C3EA000CD5398 /* Main.storyboard */,
 				0D511551214C3EA000CD5398 /* Info.plist */,
 				0D511552214C3EA000CD5398 /* Quotes.entitlements */,
 			);
 			path = Quotes;
+			sourceTree = "<group>";
+		};
+		0D51155A214C48D100CD5398 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D51154E214C3EA000CD5398 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D51155B214C48E000CD5398 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D511558214C44D900CD5398 /* QuotesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0D51155E214C48F800CD5398 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D51155C214C48F200CD5398 /* Quote.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D51154B214C3E9F00CD5398 /* ViewController.swift in Sources */,
+				0D511559214C44D900CD5398 /* QuotesViewController.swift in Sources */,
+				0D51155D214C48F200CD5398 /* Quote.swift in Sources */,
 				0D511549214C3E9F00CD5398 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
