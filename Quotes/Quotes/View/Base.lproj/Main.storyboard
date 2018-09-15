@@ -685,13 +685,80 @@
             <objects>
                 <viewController storyboardIdentifier="QuotesViewController" id="XfG-lQ-9wD" customClass="QuotesViewController" customModule="Quotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="123"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xtq-jK-xgS">
+                                <rect key="frame" x="14" y="62" width="49" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NlT-yF-l3W"/>
+                                    <constraint firstAttribute="width" constant="37" id="n6u-lf-G7E"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSGoLeftTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4xt-U7-cDA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="previousClicked:" target="XfG-lQ-9wD" id="PYX-he-Ze7"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ScX-q0-6Kc">
+                                <rect key="frame" x="184" y="13" width="113" height="32"/>
+                                <buttonCell key="cell" type="push" title="Quit Quotes" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GEL-Oj-2vR">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="quitClicked:" target="XfG-lQ-9wD" id="ddr-y0-Bjg"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="oPm-vN-551">
+                                <rect key="frame" x="63" y="71" width="354" height="17"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Multiline Label" id="4fc-UW-NFM">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z4k-wu-jua">
+                                <rect key="frame" x="417" y="62" width="49" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="DrQ-qD-X2h"/>
+                                    <constraint firstAttribute="height" constant="21" id="siZ-10-dtB"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSGoRightTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eTH-0s-QPx">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="nextClicked:" target="XfG-lQ-9wD" id="tRt-vc-iMI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="oPm-vN-551" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="35" id="7iG-Ru-YYT"/>
+                            <constraint firstItem="ScX-q0-6Kc" firstAttribute="top" secondItem="oPm-vN-551" secondAttribute="bottom" constant="30" id="JS7-EF-pbW"/>
+                            <constraint firstItem="z4k-wu-jua" firstAttribute="leading" secondItem="oPm-vN-551" secondAttribute="trailing" constant="8" id="Vn6-Y1-axS"/>
+                            <constraint firstAttribute="trailing" secondItem="z4k-wu-jua" secondAttribute="trailing" constant="20" id="WXQ-iX-iwz"/>
+                            <constraint firstItem="ScX-q0-6Kc" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="Y4b-LN-yMh"/>
+                            <constraint firstItem="oPm-vN-551" firstAttribute="leading" secondItem="xtq-jK-xgS" secondAttribute="trailing" constant="8" id="czM-HI-Vaf"/>
+                            <constraint firstItem="xtq-jK-xgS" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="iwI-sA-0cw"/>
+                            <constraint firstItem="z4k-wu-jua" firstAttribute="centerY" secondItem="oPm-vN-551" secondAttribute="centerY" id="mal-uo-WrV"/>
+                            <constraint firstAttribute="bottom" secondItem="ScX-q0-6Kc" secondAttribute="bottom" constant="20" id="or7-rJ-dPq"/>
+                            <constraint firstItem="xtq-jK-xgS" firstAttribute="centerY" secondItem="oPm-vN-551" secondAttribute="centerY" id="uxd-FR-tPE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="oPm-vN-551" id="rZZ-cC-qRK"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="258"/>
+            <point key="canvasLocation" x="75" y="243"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSGoLeftTemplate" width="9" height="12"/>
+        <image name="NSGoRightTemplate" width="9" height="12"/>
+    </resources>
 </document>

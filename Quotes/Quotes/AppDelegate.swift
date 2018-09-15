@@ -15,6 +15,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
     
     let popover = NSPopover()
+    
+    var eventMonitor: EventMonitor?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         if let button = statusItem.button {
@@ -24,6 +26,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         //statusItem.menu = constructMenu()
         popover.contentViewController = QuotesViewController.freshController()
+        
+        // Event monitor handle
+        self.eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
+//            if (self?.popover.isShown)! {
+//                self?.closePopover(sender: event)
+//            }
+            // use if let instead to avoid the unwrap("!")
+            if let strongSelf = self, strongSelf.popover.isShown {
+                strongSelf.closePopover(sender: event)
+            }
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -53,11 +66,13 @@ extension AppDelegate {
     private func showPopover(sender: Any?) {
         if let button = statusItem.button {
             popover.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
+            eventMonitor?.start()
         }
     }
     
     private func closePopover(sender: Any?) {
         popover.performClose(sender)
+        eventMonitor?.stop()
     }
 }
 
