@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D476567214F2A7D00F5803C /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D476566214F2A7D00F5803C /* ConsoleIO.swift */; };
+		0D476569214F2D2D00F5803C /* Panagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D476568214F2D2D00F5803C /* Panagram.swift */; };
+		0D47656B214FEFC000F5803C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47656A214FEFC000F5803C /* Extensions.swift */; };
 		0DFCEB90214D671E0098A327 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFCEB8F214D671E0098A327 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D476566214F2A7D00F5803C /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
+		0D476568214F2D2D00F5803C /* Panagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panagram.swift; sourceTree = "<group>"; };
+		0D47656A214FEFC000F5803C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0DFCEB8C214D671E0098A327 /* Panagam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Panagam; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFCEB8F214D671E0098A327 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				0DFCEB8F214D671E0098A327 /* main.swift */,
+				0D476566214F2A7D00F5803C /* ConsoleIO.swift */,
+				0D476568214F2D2D00F5803C /* Panagram.swift */,
+				0D47656A214FEFC000F5803C /* Extensions.swift */,
 			);
 			path = Panagam;
 			sourceTree = "<group>";
@@ -120,6 +129,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DFCEB90214D671E0098A327 /* main.swift in Sources */,
+				0D476567214F2A7D00F5803C /* ConsoleIO.swift in Sources */,
+				0D476569214F2D2D00F5803C /* Panagram.swift in Sources */,
+				0D47656B214FEFC000F5803C /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
