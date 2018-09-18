@@ -22,16 +22,16 @@ class QuotesViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        currentQuoteIndex = Int(arc4random_uniform(UInt32(quotes.count - 1)))
-        //currentQuoteIndex = Int.random(in: 0 ..< quotes.count)        // from swift 4.2
+        //currentQuoteIndex = Int(arc4random_uniform(UInt32(quotes.count - 1)))
+        currentQuoteIndex = Int.random(in: 0 ..< quotes.count)        // from swift 4.2
     }
 }
 
 extension QuotesViewController {
     // MARK: Storyboard instantiation
     static func freshController() -> QuotesViewController {
-        let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: .main)
-        let identifier = NSStoryboard.SceneIdentifier(rawValue: "QuotesViewController")
+        let storyboard = NSStoryboard(name: "Main", bundle: .main)
+        let identifier = "QuotesViewController"
         guard let viewcontroller = storyboard.instantiateController(withIdentifier: identifier) as? QuotesViewController else {
             fatalError("cannot find QutesViewController")
         }
