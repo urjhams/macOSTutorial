@@ -14,11 +14,19 @@ protocol EggTimerDelegate {
 }
 
 class EggTimer {
+    
     var delegate: EggTimerDelegate?
     var timer: Timer? = nil
+    
+    /// Thời điểm bắt đầu
     var startTime: Date?
+    
+    /// Thời gian đặt
     var duration: TimeInterval = 360
+    
+    /// Thời gian đã trôi qua
     var elapsedTime: TimeInterval = 0
+    
     var isStoped: Bool {
         return timer == nil && elapsedTime == 0
     }

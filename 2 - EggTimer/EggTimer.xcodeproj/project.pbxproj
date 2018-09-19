@@ -244,13 +244,16 @@
 				TargetAttributes = {
 					0DE47CC2213983A10068FADE = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					0DE47CD4213983A20068FADE = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 0DE47CC2213983A10068FADE;
 					};
 					0DE47CDF213983A20068FADE = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 0DE47CC2213983A10068FADE;
 					};
 				};
@@ -486,7 +489,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kin.EggTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -505,7 +508,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kin.EggTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -525,7 +528,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kin.EggTimerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EggTimer.app/Contents/MacOS/EggTimer";
 			};
 			name = Debug;
@@ -546,7 +549,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kin.EggTimerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EggTimer.app/Contents/MacOS/EggTimer";
 			};
 			name = Release;
@@ -566,7 +569,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kin.EggTimerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = EggTimer;
 			};
 			name = Debug;
@@ -586,7 +589,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kin.EggTimerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = EggTimer;
 			};
 			name = Release;
