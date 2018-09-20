@@ -13,6 +13,7 @@
 		0D423A1F21530D22003B93E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D423A1E21530D22003B93E5 /* Assets.xcassets */; };
 		0D423A2221530D22003B93E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D423A2021530D22003B93E5 /* Main.storyboard */; };
 		0D423A2B215317E3003B93E5 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423A2A215317E3003B93E5 /* WindowController.swift */; };
+		0D90D3852154467B009F83F5 /* WordCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90D3842154467B009F83F5 /* WordCountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0D423A2321530D22003B93E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D423A2421530D22003B93E5 /* BabyScript.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BabyScript.entitlements; sourceTree = "<group>"; };
 		0D423A2A215317E3003B93E5 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		0D90D3842154467B009F83F5 /* WordCountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				0D423A2A215317E3003B93E5 /* WindowController.swift */,
 				0D423A1A21530D20003B93E5 /* ViewController.swift */,
+				0D90D3842154467B009F83F5 /* WordCountViewController.swift */,
 				0D423A1C21530D20003B93E5 /* Document.swift */,
 				0D423A2021530D22003B93E5 /* Main.storyboard */,
 				0D423A2C21531800003B93E5 /* SupportingFiles */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D90D3852154467B009F83F5 /* WordCountViewController.swift in Sources */,
 				0D423A1B21530D20003B93E5 /* ViewController.swift in Sources */,
 				0D423A2B215317E3003B93E5 /* WindowController.swift in Sources */,
 				0D423A1921530D20003B93E5 /* AppDelegate.swift in Sources */,
