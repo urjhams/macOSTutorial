@@ -12,6 +12,7 @@
 		0D423A1D21530D20003B93E5 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423A1C21530D20003B93E5 /* Document.swift */; };
 		0D423A1F21530D22003B93E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D423A1E21530D22003B93E5 /* Assets.xcassets */; };
 		0D423A2221530D22003B93E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D423A2021530D22003B93E5 /* Main.storyboard */; };
+		0D423A2B215317E3003B93E5 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D423A2A215317E3003B93E5 /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		0D423A2121530D22003B93E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D423A2321530D22003B93E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D423A2421530D22003B93E5 /* BabyScript.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BabyScript.entitlements; sourceTree = "<group>"; };
+		0D423A2A215317E3003B93E5 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,15 +57,24 @@
 		0D423A1721530D20003B93E5 /* BabyScript */ = {
 			isa = PBXGroup;
 			children = (
-				0D423A1821530D20003B93E5 /* AppDelegate.swift */,
+				0D423A2A215317E3003B93E5 /* WindowController.swift */,
 				0D423A1A21530D20003B93E5 /* ViewController.swift */,
 				0D423A1C21530D20003B93E5 /* Document.swift */,
-				0D423A1E21530D22003B93E5 /* Assets.xcassets */,
 				0D423A2021530D22003B93E5 /* Main.storyboard */,
+				0D423A2C21531800003B93E5 /* SupportingFiles */,
+			);
+			path = BabyScript;
+			sourceTree = "<group>";
+		};
+		0D423A2C21531800003B93E5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0D423A1821530D20003B93E5 /* AppDelegate.swift */,
+				0D423A1E21530D22003B93E5 /* Assets.xcassets */,
 				0D423A2321530D22003B93E5 /* Info.plist */,
 				0D423A2421530D22003B93E5 /* BabyScript.entitlements */,
 			);
-			path = BabyScript;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D423A1B21530D20003B93E5 /* ViewController.swift in Sources */,
+				0D423A2B215317E3003B93E5 /* WindowController.swift in Sources */,
 				0D423A1921530D20003B93E5 /* AppDelegate.swift in Sources */,
 				0D423A1D21530D20003B93E5 /* Document.swift in Sources */,
 			);
@@ -275,11 +287,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = BabyScript/BabyScript.entitlements;
+				CODE_SIGN_ENTITLEMENTS = BabyScript/SupportingFiles/BabyScript.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TNND8RNZ36;
-				INFOPLIST_FILE = BabyScript/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BabyScript/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -294,11 +306,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = BabyScript/BabyScript.entitlements;
+				CODE_SIGN_ENTITLEMENTS = BabyScript/SupportingFiles/BabyScript.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TNND8RNZ36;
-				INFOPLIST_FILE = BabyScript/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BabyScript/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
