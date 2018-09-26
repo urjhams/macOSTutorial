@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DAD16C9215BDAA4002C4291 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAD16C8215BDAA4002C4291 /* GraphView.swift */; };
 		2667D0171CAA095100BC77E9 /* MountedVolumesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2667D0161CAA095100BC77E9 /* MountedVolumesDelegate.swift */; };
 		941B7C891C7EB28F007DB08F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B7C881C7EB28F007DB08F /* AppDelegate.swift */; };
 		941B7C8B1C7EB28F007DB08F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B7C8A1C7EB28F007DB08F /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DAD16C8215BDAA4002C4291 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		2667D0161CAA095100BC77E9 /* MountedVolumesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountedVolumesDelegate.swift; sourceTree = "<group>"; };
 		941B7C851C7EB28F007DB08F /* DiskInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiskInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		941B7C881C7EB28F007DB08F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		946F51211C81E19900E8849D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0DAD16C8215BDAA4002C4291 /* GraphView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			files = (
 				946F51251C8433F000E8849D /* CGFloat+Radians.swift in Sources */,
 				2667D0171CAA095100BC77E9 /* MountedVolumesDelegate.swift in Sources */,
+				0DAD16C9215BDAA4002C4291 /* GraphView.swift in Sources */,
 				945AC09F1C817A970044A135 /* NSColor+DiskInfo.swift in Sources */,
 				941B7C8B1C7EB28F007DB08F /* ViewController.swift in Sources */,
 				941B7C891C7EB28F007DB08F /* AppDelegate.swift in Sources */,

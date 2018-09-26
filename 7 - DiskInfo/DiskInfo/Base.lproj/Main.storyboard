@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
-        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -327,11 +327,14 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Disk Info" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Disk Info" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="cV5-yc-qdh"/>
+                        </connections>
                     </window>
                     <connections>
                         <segue destination="4QC-Gh-O61" kind="relationship" relationship="window.shadowedContentViewController" id="glN-IQ-eXm"/>
@@ -356,7 +359,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="medium" viewBased="YES" indentationPerLevel="16" outlineTableColumn="4TS-Ae-Fx0" id="AIe-HF-daQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="178" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="178" height="317"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -380,7 +383,7 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j3G-of-p5B">
-                                                                    <rect key="frame" x="0.0" y="1" width="175" height="14"/>
+                                                                    <rect key="frame" x="0.0" y="2" width="175" height="14"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="HEADER CELL" id="jrP-b3-39z">
                                                                         <font key="font" metaFont="smallSystemBold"/>
                                                                         <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -440,11 +443,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="QIG-b4-fHF"/>
                                 </constraints>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="1sj-IG-pfH">
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="1sj-IG-pfH">
                                     <rect key="frame" x="1" y="119" width="238" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="1pf-jX-W44">
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="1pf-jX-W44">
                                     <rect key="frame" x="224" y="17" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -467,10 +470,10 @@
                                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="NSAdvanced" id="Sih-Q0-3DV"/>
                                                     </imageView>
                                                     <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w7J-Eh-BcK">
-                                                        <rect key="frame" x="92" y="14" width="52" height="51"/>
+                                                        <rect key="frame" x="92" y="15" width="52" height="51"/>
                                                         <subviews>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hmM-aK-wtd">
-                                                                <rect key="frame" x="-2" y="26" width="56" height="25"/>
+                                                                <rect key="frame" x="-2" y="26" width="54" height="25"/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="z1F-0f-grl">
                                                                     <font key="font" size="21" name=".AppleSystemUIFont"/>
                                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -514,16 +517,22 @@
                                             <constraint firstAttribute="bottom" secondItem="hCX-FP-FNO" secondAttribute="bottom" constant="20" id="zSB-77-ixr"/>
                                         </constraints>
                                     </customView>
-                                    <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="fRP-NS-Jkn">
+                                    <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="fRP-NS-Jkn">
                                         <rect key="frame" x="20" y="186" width="410" height="5"/>
-                                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <font key="titleFont" metaFont="system"/>
                                     </box>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="JfI-9f-4uC" userLabel="Container View">
                                         <rect key="frame" x="0.0" y="0.0" width="450" height="180"/>
+                                        <subviews>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Jzu-cA-Udj" customClass="GraphView" customModule="DiskInfo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="450" height="180"/>
+                                            </customView>
+                                        </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Jzu-cA-Udj" secondAttribute="trailing" id="6Ob-rb-IcG"/>
+                                            <constraint firstAttribute="bottom" secondItem="Jzu-cA-Udj" secondAttribute="bottom" id="E43-ae-hew"/>
+                                            <constraint firstItem="Jzu-cA-Udj" firstAttribute="leading" secondItem="JfI-9f-4uC" secondAttribute="leading" id="H5n-aH-ht2"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="c9n-UJ-Zq7"/>
+                                            <constraint firstItem="Jzu-cA-Udj" firstAttribute="top" secondItem="JfI-9f-4uC" secondAttribute="top" id="oZn-4x-cWg"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="450" id="sl4-lj-n0b"/>
                                         </constraints>
                                     </customView>
@@ -555,6 +564,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="graphView" destination="Jzu-cA-Udj" id="bFo-eS-Ryh"/>
                         <outlet property="imageView" destination="T1x-fC-Ux1" id="66i-YH-psM"/>
                         <outlet property="infoLabel" destination="SI2-O0-kMS" id="ZlZ-3J-daW"/>
                         <outlet property="nameLabel" destination="hmM-aK-wtd" id="rqJ-FV-Utp"/>
@@ -563,11 +573,11 @@
                 </viewController>
                 <customObject id="sFU-ac-cWV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="348.5" y="624"/>
+            <point key="canvasLocation" x="348.5" y="623.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="NSActionTemplate" width="14" height="14"/>
-        <image name="NSAdvanced" width="32" height="32"/>
+        <image name="NSAdvanced" width="128" height="128"/>
     </resources>
 </document>

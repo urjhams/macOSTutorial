@@ -37,7 +37,8 @@ class ViewController: NSViewController {
   @IBOutlet var imageView: NSImageView!
   @IBOutlet var nameLabel: NSTextField!
   @IBOutlet var infoLabel: NSTextField!
-
+    @IBOutlet weak var graphView: GraphView!
+    
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -73,5 +74,6 @@ class ViewController: NSViewController {
     nameLabel.stringValue = volume.name
     infoLabel.stringValue = "Capacity: \(bytesFormatter.string(fromByteCount: volume.capacity))." +
       "Available: \(bytesFormatter.string(fromByteCount: volume.available))"
+    self.graphView.fileDistribution = volume.fileDistribution
   }
 }
